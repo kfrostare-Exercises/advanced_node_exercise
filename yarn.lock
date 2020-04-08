@@ -13,7 +13,7 @@ accepts@~1.2.12:
   integrity sha1-5fHzkoxtlf2WVYw27D2dDeSm7Oo=
   dependencies:
     mime-types "~2.1.6"
-    negotiator "0.5.3"
+    negotiator "0.6.1"
 
 ansi-align@^2.0.0:
   version "2.0.0"
@@ -1017,8 +1017,8 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-negotiator@0.5.3:
-  version "0.5.3"
+negotiator@^0.6.1:
+  version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.5.3.tgz#269d5c476810ec92edbe7b6c2f28316384f9a7e8"
   integrity sha1-Jp1cR2gQ7JLtvntsLygxY4T5p+g=
 
