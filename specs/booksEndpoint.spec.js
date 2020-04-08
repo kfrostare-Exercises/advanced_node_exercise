@@ -19,13 +19,26 @@ describe("GET /api/v1/books", () => {
     response = await request.get("/api/v1/books");
   });
 
-  it('responds with status 200', () => {
-    expect(response.status).to.equal(200)
+  it("responds with status 200", () => {
+    expect(response.status).to.equal(200);
   });
 
-  it('responds with list of books', () => {
-    const expectedBody = { books: [{ title: 'The Karro' }] }
-    expect(jsonResponse(response))
-      .to.equal(JSON.stringify(expectedBody))
+  it("respons with list of books as an array", () => {
+    console.table(response.body.books)
+    expect(response.body.books).to.be.an("array");
+  });
+
+  it("respons title for books", () => {
+    expect(response.body.books[0].title).to.equal("Learn NodeJS with Thomas");
+  });
+
+  describe("GET /api/v1/books/:id", () => {
+    before(async () => {
+      response = await request.get("/api/v1/books/1");
+    });
+
+    it("response with a single book", () => {
+      expect(response.body.book.id).to.equal(1);
+    });
   });
 });
