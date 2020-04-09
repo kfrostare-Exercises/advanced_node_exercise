@@ -23,12 +23,12 @@ describe("GET /api/v1/books", () => {
     expect(response.status).to.equal(200);
   });
 
-  it("respons with list of books as an array", () => {
+  it("responds with list of books as an array", () => {
     console.table(response.body.books)
     expect(response.body.books).to.be.an("array");
   });
 
-  it("respons title for books", () => {
+  it("responds title for books", () => {
     expect(response.body.books[0].title).to.equal("Learn NodeJS with Thomas");
   });
 
