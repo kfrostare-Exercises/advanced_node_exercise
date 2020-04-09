@@ -1,10 +1,10 @@
 "use strict";
 
 module.exports = (factory, Models) => {
-  factory.define("Book", Models.Book, {
-    title: "Foo",
+  factory.define("Author", Models.Author, {
+    firstName: "Kalle",
+    lastName: "Karlsson",
     createdAt: new Date(),
     updatedAt: new Date(),
-    AuthorId: factory.assoc('Author', 'id') 
   });
 };
